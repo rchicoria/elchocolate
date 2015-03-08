@@ -17,7 +17,7 @@
     "watchify": "^2.4.0"
   },
   "scripts": {
-    "start": "browserify app.jsx -t babelify --outfile app.js && node server.js",
+    "start": "browserify app.jsx -t babelify --outfile app.js && iojs server.js",
     "watch": "watchify app.jsx -t babelify --outfile app.js & nodemon server.js"
   }
 }
